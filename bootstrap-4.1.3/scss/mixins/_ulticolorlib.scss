@@ -1,0 +1,32 @@
+$a900:  #900;
+$a5D8AA8: #5D8AA8;
+
+$colorlist:();
+$color:();
+$colorlist: map-merge(
+                (
+                        a900: $a900,
+                        a5D8AA8:$a5D8AA8,
+                ),
+                $colorlist
+);
+
+@mixin ultimate_color_lib($color){
+  .bg-#($color) {
+    background-color: map-get($colorlist,$color);
+  }
+
+  /*.text-#($color){
+  color: map-get($colorlist,$color);
+}
+  .btn-#($color){
+  background-color: map-get($colorlist,$color);
+}*/
+
+}
+
+
+@include ultimate_color_lib(a900);
+@include ultimate_color_lib(a5D8AA8);
+
+/*loop through all 16 million colors for (int color = 0x000000; color <= 0xFFFFFF; ++color)*/
