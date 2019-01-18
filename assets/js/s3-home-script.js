@@ -65,6 +65,6 @@ $(document).ready(function(){
 
     /*END SCRUM TEAM 3 CODE*/
     /*inside $(document).ready()funcion*/
-    
+
 });
 /*outside $(document).ready()function*/
