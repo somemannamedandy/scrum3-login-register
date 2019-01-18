@@ -54,7 +54,7 @@ $(document).ready(function(){
             s3_specialCharCount = s3_passInput.replace(/[!@#$%^&*()_+\-=\[\]{};':"|,.<>\/?\\]/g,"").length;
 
 
-        (s3_passInput.length < s3_minPassLength )?$('.s3-tooltip-text li:nth-child(1)').show() :$('.s3-tooltip-text li:nth-child(1)').hide();
+        (s3_passInput.length < s3_minPassLength )?$('.s3-tooltip-text li:nth-child(1)').show():$('.s3-tooltip-text li:nth-child(1)').hide();
         (s3_intCount<s3_minInt)? $('.s3-tooltip-text li:nth-child(2)').show() :$('.s3-tooltip-text li:nth-child(2)').hide();
         (s3_lowCharCount<s3_minLowChar)?$('.s3-tooltip-text li:nth-child(3)').show() :$('.s3-tooltip-text li:nth-child(3)').hide();
         (s3_uppCharCount<s3_minUppChar)? $('.s3-tooltip-text li:nth-child(4)').show() :$('.s3-tooltip-text li:nth-child(4)').hide();
@@ -64,5 +64,7 @@ $(document).ready(function(){
     });
 
     /*END SCRUM TEAM 3 CODE*/
-    /**/
+    /*inside $(document).ready()funcion*/
+    
 });
+/*outside $(document).ready()function*/

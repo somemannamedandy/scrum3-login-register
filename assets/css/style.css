@@ -1,3 +1,7 @@
+body{
+    background-image: url("../images/home_background_image.png");
+    background-repeat: no-repeat;
+}
 .s3-content-wrap{
     transform: translate(-50%);
     top: 50%;
@@ -37,7 +41,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 /* // Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    .s3-tooltip-text{
+        display:none !important;
+    }
+}
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {}
